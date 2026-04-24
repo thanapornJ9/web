@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Isotope Library -->
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Your Filter Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let portfolioContainer = document.querySelector('.isotope-container');
+
+            if (portfolioContainer) {
+                let iso = new Isotope(portfolioContainer, {
+                    itemSelector: '.isotope-item',
+                    layoutMode: 'masonry'
+                });
+
+                let filters = document.querySelectorAll('.portfolio-filters li');
+
+                filters.forEach(function (filter) {
+                    filter.addEventListener('click', function () {
+
+                        filters.forEach(el => el.classList.remove('filter-active'));
+                        this.classList.add('filter-active');
+
+                        iso.arrange({
+                            filter: this.getAttribute('data-filter')
+                        });
+                    });
+                });
+            }
+        });
+    </script>
+    <meta charset="utf-8">
+    <title>7x7 ART CRAFSTUDIOT</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+ 
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
+                <a href="index.html" class="navbar-brand">
+                    <h1>7x7 ART CRAFT STUDIO</h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Materials</a>
+                        <a href="project.html" class="nav-item nav-link active">Projects</a>
+                        <div class="nav-item dropdown">
+                            <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="productive.html" class="dropdown-item">Productive Working Atmosphere</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 bg-primary hero-header">
+        <div class="container py-5">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-1 mb-0 animated slideInLeft">Projects</h1>
+                </div>
+                <div class="col-lg-6 animated slideInRight">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-end mb-0">
+                            <li class="breadcrumb-item"><a class="text-primary" href="#!">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-primary" href="#!">Pages</a></li>
+                            <li class="breadcrumb-item text-secondary active" aria-current="page">Projects</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Project Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-0">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column justify-content-center bg-primary h-100 p-5">
+                        <h1 class="text-white mb-5">Projects <span
+                                class="text-uppercase text-primary bg-light px-2">Preview</span></h1>
+                        <h4 class="text-white mb-0"><span class="display-1">6</span> of our best projects</h4>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/preview/1.png" alt="">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Wood</h4>
+                                    <small class="text-white">31 Projects+</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/preview/2.png" alt="">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Mix material</h4>
+                                    <small class="text-white">22 Projects+</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/preview/3.png" alt="">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Fiber</h4>
+                                    <small class="text-white">10 Projects+</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/preview/4.png" alt="">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Iron</h4>
+                                    <small class="text-white">5 Projects+</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/preview/5.png" alt="">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Rock</h4>
+                                    <small class="text-white">3 Projects+</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/preview/6.png" alt="">
+                                <a class="project-overlay text-decoration-none" href="#!">
+                                    <h4 class="text-white">Design</h4>
+                                    <small class="text-white">13 Projects+</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <p><strong>2026 Collection</strong> | Last Updated: March 2026</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+
+                <li data-filter="*" class="filter-active">All Projects</li>
+
+                <li data-filter=".Fiber">Fiber</li>
+
+                <li data-filter=".Wood">Wood</li>
+
+                <li data-filter=".Mix">Mix material</li>
+
+                <li data-filter=".Iron">Iron</li>
+
+                <li data-filter=".Design">Design</li>
+
+                <li data-filter=".Other">Other</li>
+
+            </ul>
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Iron">
+                    <img src="img/portfolio/01-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>01</h4>
+
+                        <a href="img/portfolio/01-large.jpg" title="Project No. 1" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Iron">
+                    <img src="img/portfolio/02-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>02</h4>
+
+                        <a href="img/portfolio/02-large.jpg" title="Project No. 2" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Mix">
+                    <img src="img/portfolio/03-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>03</h4>
+
+                        <a href="img/portfolio/03-large.jpg" title="Project No. 3" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/04-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>04</h4>
+
+                        <a href="img/portfolio/04-large.jpg" title="Project No. 4" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/05-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>05</h4>
+
+                        <a href="img/portfolio/05-large.jpg" title="Project No. 5" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Fiber">
+                    <img src="img/portfolio/06-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>06</h4>
+
+                        <a href="img/portfolio/06-large.jpg" title="Project No. 6" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Fiber">
+                    <img src="img/portfolio/07-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>07</h4>
+
+                        <a href="img/portfolio/07-large.jpg" title="Project No. 7" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Fiber">
+                    <img src="img/portfolio/08-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>08</h4>
+
+                        <a href="img/portfolio/08-large.jpg" title="Project No. 8" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Fiber">
+                    <img src="img/portfolio/09-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>09</h4>
+
+                        <a href="img/portfolio/09-large.jpg" title="Project No. 9" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Fiber">
+                    <img src="img/portfolio/10-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>10</h4>
+
+                        <a href="img/portfolio/10-large.jpg" title="Project No. 10" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/11-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>11</h4>
+
+                        <a href="img/portfolio/11-large.jpg" title="Project No. 11" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/12-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>12</h4>
+
+                        <a href="img/portfolio/12-large.jpg" title="Project No. 12" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/13-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>13</h4>
+
+                        <a href="img/portfolio/13-large.jpg" title="Project No. 13" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/14-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>14</h4>
+
+                        <a href="img/portfolio/14-large.jpg" title="Project No. 14" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/15-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>15</h4>
+
+                        <a href="img/portfolio/15-large.jpg" title="Project No. 15" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Mix">
+                    <img src="img/portfolio/16-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>16</h4>
+
+                        <a href="img/portfolio/16-large.jpg" title="Project No. 16" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Mix">
+                    <img src="img/portfolio/17-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>17</h4>
+
+                        <a href="img/portfolio/17-large.jpg" title="Project No. 17" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Fiber">
+                    <img src="img/portfolio/18-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>18</h4>
+
+                        <a href="img/portfolio/18-large.jpg" title="Project No. 18" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/19-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>19</h4>
+
+                        <a href="img/portfolio/19-large.jpg" title="Project No. 19" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Iron">
+                    <img src="img/portfolio/20-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>20</h4>
+
+                        <a href="img/portfolio/20-large.jpg" title="Project No. 20" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/21-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>21</h4>
+
+                        <a href="img/portfolio/21-large.jpg" title="Project No. 21" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/22-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>22</h4>
+
+                        <a href="img/portfolio/22-large.jpg" title="Project No. 22" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/23-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>23</h4>
+
+                        <a href="img/portfolio/23-large.jpg" title="Project No. 23" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/24-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>24</h4>
+
+                        <a href="img/portfolio/24-large.jpg" title="Project No. 24" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/25-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>25</h4>
+
+                        <a href="img/portfolio/25-large.jpg" title="Project No. 25" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/26-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>26</h4>
+
+                        <a href="img/portfolio/26-large.jpg" title="Project No. 26" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/27-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>27</h4>
+
+                        <a href="img/portfolio/27-large.jpg" title="Project No. 27" data-gallery="portfolio-gallery-app"
+                            class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/28-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>28</h4>
+
+                        <a href="img/portfolio/28-large.jpg" title="Project No.  28"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/29-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>29</h4>
+
+                        <a href="img/portfolio/29-large.jpg" title="Project No.  29"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/30-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>30</h4>
+
+                        <a href="img/portfolio/30-large.jpg" title="Project No.  30"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/31-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>31</h4>
+
+                        <a href="img/portfolio/31-large.jpg" title="Project No.  31"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/32-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>32</h4>
+
+                        <a href="img/portfolio/32-large.jpg" title="Project No.  32"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/33-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>33</h4>
+
+                        <a href="img/portfolio/33-large.jpg" title="Project No.  33"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/34-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>34</h4>
+
+                        <a href="img/portfolio/34-large.jpg" title="Project No.  34"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/35-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>35</h4>
+
+                        <a href="img/portfolio/35-large.jpg" title="Project No.  35"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/36-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>36</h4>
+
+                        <a href="img/portfolio/36-large.jpg" title="Project No.  36"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/37-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>37</h4>
+
+                        <a href="img/portfolio/37-large.jpg" title="Project No.  37"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/38-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>38</h4>
+
+                        <a href="img/portfolio/38-large.jpg" title="Project No.  38"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/39-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>39</h4>
+
+                        <a href="img/portfolio/39-large.jpg" title="Project No.  39"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/40-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>40</h4>
+
+                        <a href="img/portfolio/40-large.jpg" title="Project No.  40"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/41-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>41</h4>
+
+                        <a href="img/portfolio/41-large.jpg" title="Project No.  41"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/42-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>42</h4>
+
+                        <a href="img/portfolio/42-large.jpg" title="Project No.  42"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/43-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>43</h4>
+
+                        <a href="img/portfolio/43-large.jpg" title="Project No.  43"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood">
+                    <img src="img/portfolio/44-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>44</h4>
+
+                        <a href="img/portfolio/44-large.jpg" title="Project No.  44"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/45-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>45</h4>
+
+                        <a href="img/portfolio/45-large.jpg" title="Project No.  45"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/46-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>46</h4>
+
+                        <a href="img/portfolio/46-large.jpg" title="Project No.  46"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/47-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>47</h4>
+
+                        <a href="img/portfolio/47-large.jpg" title="Project No.  47"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Mix Fiber Other">
+                    <img src="img/portfolio/48-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>48</h4>
+
+                        <a href="img/portfolio/48-large.jpg" title="Project No.  48"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Mix Iron Wood">
+                    <img src="img/portfolio/49-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>49</h4>
+
+                        <a href="img/portfolio/49-large.jpg" title="Project No.  49"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/50-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>50</h4>
+
+                        <a href="img/portfolio/50-large.jpg" title="Project No.  50"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/51-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>51</h4>
+
+                        <a href="img/portfolio/51-large.jpg" title="Project No.  50"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/52-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>52</h4>
+
+                        <a href="img/portfolio/52-large.jpg" title="Project No.  52"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design">
+                    <img src="img/portfolio/53-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>53</h4>
+
+                        <a href="img/portfolio/53-large.jpg" title="Project No.  53"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design">
+                    <img src="img/portfolio/54-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>54</h4>
+
+                        <a href="img/portfolio/54-large.jpg" title="Project No.  54"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design">
+                    <img src="img/portfolio/55-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>55</h4>
+
+                        <a href="img/portfolio/55-large.jpg" title="Project No.  55"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/56-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>56</h4>
+
+                        <a href="img/portfolio/56-large.jpg" title="Project No.  56"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Mix Wood">
+                    <img src="img/portfolio/57-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>57</h4>
+
+                        <a href="img/portfolio/57-large.jpg" title="Project No.  57"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Iron">
+                    <img src="img/portfolio/58-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>58</h4>
+
+                        <a href="img/portfolio/58-large.jpg" title="Project No.  58"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood Other">
+                    <img src="img/portfolio/59-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>59</h4>
+
+                        <a href="img/portfolio/59-large.jpg" title="Project No.  59"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Mix Other">
+                    <img src="img/portfolio/60-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>60</h4>
+
+                        <a href="img/portfolio/60-large.jpg" title="Project No.  60"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/61-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>61</h4>
+
+                        <a href="img/portfolio/61-large.jpg" title="Project No.  61"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/62-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>62</h4>
+
+                        <a href="img/portfolio/62-large.jpg" title="Project No.  62"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design Other">
+                    <img src="img/portfolio/63-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>63</h4>
+
+                        <a href="img/portfolio/63-large.jpg" title="Project No.  63"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design Other">
+                    <img src="img/portfolio/64-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>64</h4>
+
+                        <a href="img/portfolio/64-large.jpg" title="Project No.  64"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design Other">
+                    <img src="img/portfolio/65-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>65</h4>
+
+                        <a href="img/portfolio/65-large.jpg" title="Project No.  65"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design">
+                    <img src="img/portfolio/66-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>66</h4>
+
+                        <a href="img/portfolio/66-large.jpg" title="Project No.  66"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other">
+                    <img src="img/portfolio/67-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>67</h4>
+
+                        <a href="img/portfolio/67-large.jpg" title="Project No.  67"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Wood Design">
+                    <img src="img/portfolio/68-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>68</h4>
+
+                        <a href="img/portfolio/68-large.jpg" title="Project No.  68"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Design">
+                    <img src="img/portfolio/69-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>69</h4>
+
+                        <a href="img/portfolio/69-large.jpg" title="Project No.  69"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other Design">
+                    <img src="img/portfolio/70-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>70</h4>
+
+                        <a href="img/portfolio/70-large.jpg" title="Project No.  70"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other Design">
+                    <img src="img/portfolio/71-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>71</h4>
+
+                        <a href="img/portfolio/71-large.jpg" title="Project No.  71"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other Design">
+                    <img src="img/portfolio/72-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>72</h4>
+
+                        <a href="img/portfolio/72-large.jpg" title="Project No.  72"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item Other ">
+                    <img src="img/portfolio/73-small.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>73</h4>
+
+                        <a href="img/portfolio/73-large.mp4" title="Project No.  73"
+                            data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+                    </div>
+                </div><!-- End Portfolio Item -->
+
+
+            </div><!-- End Portfolio Container -->
+
+            <!-- Newsletter Start -->
+            <div class="container-fluid bg-primary newsletter p-0">
+                <div class="container-fluid p-0">
+                    <div class="row g-0 align-items-stretch">
+
+                        <!-- Left Image -->
+                        <div class="col-md-5 wow fadeIn" data-wow-delay="0.2s">
+                            <img class="img-fluid w-100 h-100" src="img/7x7.png" alt="" style="object-fit: cover;">
+                        </div>
+
+                        <!-- Right Google Map -->
+                        <div class="col-md-7 wow fadeIn" data-wow-delay="0.5s">
+                            <div style="width: 100%; height: 100%;">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.6015933307654!2d100.63353347509444!3d13.982303986434008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d7f0070a8570b%3A0x407aed6bbe838852!2sTc%20art%20creative%20Studio!5e0!3m2!1sth!2sth!4v1752224781896!5m2!1sth!2sth"
+                                    frameborder="0" style="border:0; width:100%; height:100%; min-height:500px;"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter End -->
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid bg-dark text-white-50 footer pt-5">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                            <a href="index.html" class="d-inline-block mb-3">
+                                <h1 class="text-white">7x7 Art Craft Studio</h1>
+                            </a>
+                            <p class="mb-0">Since 2026</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                            <h5 class="text-white mb-4">Get In Touch</h5>
+                            <p><i class="fa fa-map-marker-alt me-3"></i>TC Art Creative., Ltd.<br>
+                                1178/473 Liab Khlong Rangsit Road, Prachathipat Subdistrict, Thanyaburi District, Pathum
+                                Thani
+                                Province 12130, Thailand
+                                Tax ID: 01355670333111</p>
+                            <p><i class="fa fa-phone-alt me-3"></i>061 410 9400</p>
+                            <p><i class="fa fa-envelope me-3"></i>7x7art.studio@gmail.com</p>
+                            <p><i class="fa fa-comments me-3"></i>Line id: komlomkomlom</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-primary btn-square border-2 me-2"
+                                    href="https://line.me/ti/p/~komlomkomlom" target="_blank">
+                                    <i class="fab fa-line"></i>
+                                </a>
+
+                                <a class="btn btn-outline-primary btn-square border-2 me-2"
+                                    href="https://www.facebook.com/profile.php?id=61574732772816" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+
+                                <a class="btn btn-outline-primary btn-square border-2 me-2"
+                                    href="https://www.instagram.com/tc_art_creative_studio?igsh=MXhsdDhtMDExbmR5ZQ=="
+                                    target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                            <h5 class="text-white mb-4">Popular Link</h5>
+                            <a class="btn btn-link" href="#!">About Us</a>
+                            <a class="btn btn-link" href="#!">Materials</a>
+                            <a class="btn btn-link" href="#!">Projects</a>
+                            <a class="btn btn-link" href="#!">Productive Work</a>
+                            <a class="btn btn-link" href="#!">Contact Us</a>
+                        </div>
+                        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                            <h5 class="text-white mb-4">Our Services</h5>
+                            <a class="btn btn-link" href="#!">Interior Design</a>
+                            <a class="btn btn-link" href="#!">Project Planning</a>
+                            <a class="btn btn-link" href="#!">Renovation</a>
+                            <a class="btn btn-link" href="#!">Implement</a>
+                            <a class="btn btn-link" href="#!">Landscape Design</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Footer End -->
+
+
+            <!-- Back to Top -->
+            <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+            <!-- JavaScript Libraries -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+            <script src="js/main.js"></script>
+
+</body>
+
+</html>
